@@ -1,0 +1,14 @@
+name: Cloud Test Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  run-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Welcome Message
+      run: |
+        echo "Hello, Your GitHub Cloud Automation is working successfully!"
